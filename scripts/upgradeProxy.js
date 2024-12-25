@@ -1,7 +1,7 @@
 const { ethers, upgrades } = require('hardhat');
 
 // TO DO: Place the address of your proxy here!
-const proxyAddress = '0xd0CC3Fd1500395c7a7C09dAE072A71769316238F';
+const proxyAddress = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512';
 
 async function main() {
   try {
