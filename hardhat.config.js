@@ -5,9 +5,9 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.28",
   networks: {
-    hardhat: {
-      chainId: 31337, // Default Hardhat network chain ID
-    },
-  },
+    localhost: {
+      url: "http://127.0.0.1:8545/",
+    }
+  }
 };
 
