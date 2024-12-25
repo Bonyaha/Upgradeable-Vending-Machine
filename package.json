@@ -1,0 +1,21 @@
+{
+  "name": "my-upgradeable-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Roman",
+  "license": "ISC",
+  "description": "deploying smart contracts that use the transparent proxy pattern in order to be upgradeable",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "@openzeppelin/contracts-upgradeable": "^5.1.0",
+    "@openzeppelin/hardhat-upgrades": "^3.8.0",
+    "dotenv": "^16.4.7"
+  }
+}
