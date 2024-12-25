@@ -5,12 +5,9 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.28",
   networks: {
-    sepolia: {
-      url: process.env.ALCHEMY_SEPOLIA_URL,
-      accounts: [process.env.SEPOLIA_PRIVATE_KEY]
-    }
+    hardhat: {
+      chainId: 31337, // Default Hardhat network chain ID
+    },
   },
-  etherscan: {
-    apiKey: process.env.ETHERSCAN_KEY
-  }
 };
+
