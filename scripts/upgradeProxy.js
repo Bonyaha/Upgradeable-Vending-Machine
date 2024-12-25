@@ -1,11 +1,18 @@
 const { ethers, upgrades } = require('hardhat');
 
 // TO DO: Place the address of your proxy here!
-const proxyAddress = '0xd0CC3Fd1500395c7a7C09dAE072A71769316238F';
+const proxyAddress = '0x951025CEc6A25dE8006F44ab1d1Db8e4B38E5B5E';
 
 async function main() {
   try {
     console.log('Starting upgrade process...');
+    
+    // Step 1: Force import the proxy
+    console.log('Importing proxy...');
+    const VendingMachineV1 = await ethers.getContractFactory('VendingMachineV1');
+    await upgrades.forceImport(proxyAddress, VendingMachineV1);
+    console.log('Proxy imported successfully.');
+
     
     // Get the contract factory
     const VendingMachineV2 = await ethers.getContractFactory('VendingMachineV2');
