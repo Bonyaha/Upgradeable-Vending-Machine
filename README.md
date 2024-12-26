@@ -18,14 +18,14 @@ In this project, we will run through deploying smart contracts that use the tran
    ```
 
 3. Interact with VendingMachineV1 Implementation contract via Proxy contract on Etherscan:
-   1.From you terminal, copy your Proxy contract address
-   2.Paste it into Sepolia Etherscan
-   3.Select the 'Contract' tab
-   4.On the right-hand side, select 'More Options'
-   5.Select 'Is this a proxy?'
-   6.Select 'Verify'
-   7.Select 'Save'
-   8.Now, go back to your Proxy contract's Etherscan page. You can now Read as Proxy and Write as Proxy
+   - From you terminal, copy your Proxy contract address
+   - Paste it into Sepolia Etherscan
+   - Select the 'Contract' tab
+   - On the right-hand side, select 'More Options'
+   - Select 'Is this a proxy?'
+   - Select 'Verify'
+   - Select 'Save'
+   - Now, go back to your Proxy contract's Etherscan page. You can now Read as Proxy and Write as Proxy
 
 4. Upgrade the proxy:
    ```bash
