@@ -18,7 +18,6 @@ npx hardhat ignition deploy ./ignition/modules/Lock.js
 - for deploying - `npx hardhat run scripts/deployProxy.js --network sepolia`
 - for verifying VENDINGMACHINEV1 contract - `npx hardhat verify --network sepolia YOUR_VENDINGMACHINEV1_IMPLEMENTATION_ADDRESS`
 - we can interact with our VendingMachineV1 Implementation contract directly via our Proxy contract using Etherscan:
-
     1. From you terminal, copy your Proxy contract address
     2. Paste it into Sepolia Etherscan
     3. Select the 'Contract' tab
@@ -26,7 +25,6 @@ npx hardhat ignition deploy ./ignition/modules/Lock.js
     5. Select 'Is this a proxy?'
     6. Select 'Verify'
     7. Select 'Save'
-    8. Now, go back to your Proxy contract's Etherscan page
-    You can now Read as Proxy and Write as Proxy
+    8. Now, go back to your Proxy contract's Etherscan page.You can now Read as Proxy and Write as Proxy
 - upgrading proxy - `npx hardhat run scripts/upgradeProxy.js --network sepolia`
 - for verifying VENDINGMACHINEV2 contract - `npx hardhat verify --network sepolia YOUR_VENDINGMACHINEV2_IMPLEMENTATION_ADDRESS`
